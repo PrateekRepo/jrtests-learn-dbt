@@ -28,7 +28,7 @@ on-run-start:
 
 on-run-end:
   - 'grant usage on schema analytics.dbt to role TRANSFORM_ROLE'
-  - 'grant select on all tables in schema analytics.dbt to role aTRANSFORM_ROLE'
+  - 'grant select on all tables in schema analytics.dbt to role TRANSFORM_ROLE'
   - 'grant select on all views in schema analytics.dbt to role TRANSFORM_ROLE'
 
 
