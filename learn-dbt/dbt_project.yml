@@ -27,9 +27,9 @@ on-run-start:
     - "create table if not exists audit (model text, state text, time timestamp_ltz)"
 
 on-run-end:
-  - 'grant usage on schema analytics.dbt to role analyst'
-  - 'grant select on all tables in schema analytics.dbt to role analyst'
-  - 'grant select on all views in schema analytics.dbt to role analyst'
+  - 'grant usage on schema analytics.dbt to role TRANSFORM_ROLE'
+  - 'grant select on all tables in schema analytics.dbt to role aTRANSFORM_ROLE'
+  - 'grant select on all views in schema analytics.dbt to role TRANSFORM_ROLE'
 
 
 # Configuring models
